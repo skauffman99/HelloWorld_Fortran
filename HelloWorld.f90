@@ -7,7 +7,7 @@
 
 
 program HelloAgainWorldF90
-use DoCalculation
+use DoCalculationF90
 
   real, dimension(:), allocatable :: x ! array that we will read into
   integer :: n 			! value that is read from file
