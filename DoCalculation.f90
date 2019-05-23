@@ -1,4 +1,5 @@
 module DoCalculation
+implicit none
 
 subroutine calculate(n, x)
   integer, intent(in) :: n
@@ -7,3 +8,5 @@ subroutine calculate(n, x)
   x(i) = x(i) * 2
   end do
 end subroutine
+
+end module DoCalculationF90
