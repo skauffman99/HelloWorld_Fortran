@@ -20,9 +20,11 @@ program HelloAgainWorldF90
   read(99,*) x 			!now read in the array
 
   !do something to the array, like loop over it and multiply by 2
-  do i=0,n
-   x(i) = x(i) * 2
-  end do
+  subroutine calculate
+    do i=0,n
+    x(i) = x(i) * 2
+    end do
+  end subroutine
 
   write(*,*) "Done my calculations."
   open(unit=89, file='IAmHere.txt', status='replace', action='write')
