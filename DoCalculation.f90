@@ -1,4 +1,4 @@
-module DoCalculation
+module DoCalculationF90
 implicit none
 
 subroutine calculate(n, x)
