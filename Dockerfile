@@ -7,7 +7,7 @@ RUN yum update -y
 RUN yum install -y gcc-gfortran gdb make
 
 # build the hello world code
-COPY Makefile run_fortran.sh HelloWorld.f90 HelloAgainInput.txt /fortran/
+COPY Makefile run_fortran.sh DoCalculation.f90 HelloWorld.f90 HelloAgainInput.txt /fortran/
 WORKDIR /fortran/
 RUN make HelloWorld
 
