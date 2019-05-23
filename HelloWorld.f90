@@ -21,7 +21,7 @@ use DoCalculationF90
   allocate(x(n))
   read(99,*) x 			!now read in the array
 
-  call calculate(n,x)
+  call testCalc(n,x)
 
   write(*,*) "Done my calculations."
   open(unit=89, file='IAmHere.txt', status='replace', action='write')

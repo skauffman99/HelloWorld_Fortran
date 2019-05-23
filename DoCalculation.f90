@@ -1,7 +1,7 @@
 module DoCalculationF90
 implicit none
 
-subroutine calculate(n, x)
+subroutine testCalc(n, x)
   integer, intent(in) :: n
   real, dimension(:), allocatable :: x
   do i=0,n
