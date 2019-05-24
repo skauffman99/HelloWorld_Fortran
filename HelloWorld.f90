@@ -7,7 +7,7 @@
 
 
 program HelloAgainWorldF90
-use DoCalculationF90
+use DoCalculation
 
   real, dimension(:), allocatable :: x ! array that we will read into
   integer :: n 			! value that is read from file
@@ -21,7 +21,7 @@ use DoCalculationF90
   allocate(x(n))
   read(99,*) x 			!now read in the array
 
-  call testCalc(n,x)
+  call calculate(x,n)
 
   write(*,*) "Done my calculations."
   open(unit=89, file='IAmHere.txt', status='replace', action='write')
